@@ -10,22 +10,59 @@ fetch('https://api.github.com/users/Connorh223')
         name.innerText = data.name
         root.appendChild(name)
 
-        //bio
-        const bio = document.createElement('p')
-        bio.innerText = data.bio
-        root.appendChild(bio)
 
-        //location
-        const location = document.createElement('p')
-        location.innerText = data.location
-        root.appendChild(location)
+        //basics box
+        const basicsBox = document.createElement('div')
+        basicsBox.classList.add('basics-box')
+        root.appendChild(basicsBox)
+
+        //basics title
+        const basicsTitle = document.createElement('h2')
+        basicsTitle.innerText = "The Basics"
+        basicsBox.appendChild(basicsTitle)
+
+        //basics name
+        const basicsName = document.createElement('p')
+        basicsName.innerText = "Name " + "Connor Hickman"
+        basicsBox.appendChild(basicsName)
+
+        //the story box
+        const storyBox = document.createElement('div')
+        storyBox.classList.add('story-box')
+        root.appendChild(storyBox)
+
+        //the story title
+        const storyTitle = document.createElement('h3')
+        storyTitle.innerText = "The Story"
+        storyBox.appendChild(storyTitle)
 
 
+         //bio
+         const bio = document.createElement('p')
+         bio.innerText = data.bio
+         storyBox.appendChild(bio)
+ 
+         //location
+         const location = document.createElement('p')
+         location.innerText = data.location
+          storyBox.appendChild(location)
+
+        //pic box
+        const picBox = document.createElement('div')
+        picBox.classList.add('pic-box')
+        root.appendChild(picBox)
+
+        //pic
+        const avatar = document.createElement('img')
+        avatar.src = data.avatar_url
+        picBox.appendChild(avatar)
 
 
-    }
+    
+
+    
         
-        )
+      }  )
 
 
 

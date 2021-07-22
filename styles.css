@@ -3,9 +3,38 @@
     padding-top: 40px;
     background-color: black;
     color: white;
-    border-bottom: bisque;
+    border-bottom-style: groove;
     text-align: center;
-
-    
     font-family: Didot, serif
+}
+
+.basics-box {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: blueviolet; */
+    display: inline-block;
+    text-align: center;
+    padding-left: 200px;
+}
+
+.story-box {
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.h3 {
+    font-size: large;
+}
+
+.pic-box {
+    display: flex;
+    /* display: inline-block; */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
